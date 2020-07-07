@@ -60,7 +60,7 @@ class _WeatherAppState extends State<WeatherApp> {
     setState(() {
       temperature = data["the_temp"].round();
       weather = data["weather_state_name"].replaceAll(' ', '').toLowerCase();
-      abbrevation = data["weather_state_abbr"];
+      abbreviation = data["weather_state_abbr"];
     });
   }
 
@@ -140,7 +140,7 @@ class _WeatherAppState extends State<WeatherApp> {
                           Center(
                             child: Image.network(
                               'https://www.metaweather.com/static/img/weather/png/' +
-                                  abbrevation +
+                                  abbreviation +
                                   '.png',
                               width: 100,
                             ),
