@@ -16,7 +16,7 @@ class _WeatherAppState extends State<WeatherApp> {
   String location = 'San Francisco';
   int woeid = 2487956;
   String weather = 'clear';
-  String abbrevation = '';
+  String abbreviation = '';
   String errorMessage = '';
 
   final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
