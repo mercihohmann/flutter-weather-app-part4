@@ -21,8 +21,8 @@ class _WeatherAppState extends State<WeatherApp> {
 
   final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
 
-  Position _currentPosition;
-  String _currentAddress;
+  late Position _currentPosition;
+  late String _currentAddress;
 
   String searchApiUrl =
       'https://www.metaweather.com/api/location/search/?query=';
