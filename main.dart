@@ -12,7 +12,7 @@ class WeatherApp extends StatefulWidget {
 }
 
 class _WeatherAppState extends State<WeatherApp> {
-  int temperature;
+  int temperature = 0;
   String location = 'San Francisco';
   int woeid = 2487956;
   String weather = 'clear';
@@ -65,8 +65,8 @@ class _WeatherAppState extends State<WeatherApp> {
   }
 
   void onTextFieldSubmitted(String input) async {
-    await fetchSearch(input);
-    await fetchLocation();
+    fetchSearch(input);
+    fetchLocation();
   }
 
   _getCurrentLocation() {
